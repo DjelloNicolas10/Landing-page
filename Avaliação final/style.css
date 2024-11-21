@@ -1,6 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte */
+
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+header {
+    background-color: white;
+    padding: 8px;
+    top: 0;
+    z-index: 999;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+ 
+.section01 {
+  padding: 180px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+} 
+
+.section01 .div01 i {
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.section01 h3 {
+    font-size: 1.5em;
+}
+
+.section01 span {
+    color: chocolate;
+}
+
+.section01 p {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+
+.section01 button {
+    height: 40px;
+    width: 10rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(63, 61, 61);
+    margin-top: 10px;
+}
+.section01 button a {
+    color: white;
+}
+
+.lista-nãoordenada {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.lista-nãoordenada li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.lista-nãoordenada li a:hover {
+    color: chocolate;
+    text-decoration: overline 2px black;
+    transition: 1s; 
+}
+
+
+ #section-01 .div02 img {
+    width: 400px;
+    height: 550px;
+ }
+ /* Finalizando a estilização da primeira sessão */
+
+ 
+ .section02 {
+    padding: 250px;
+    background-color: #995656;
+ }
+
+
+ /* A estilização do nosso carrossel */
+
+
+/* Estilo básico para os cards */
+/* .card {
+    background-color: rgb(143, 2, 2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 400px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.card h3 {
+    color: white;
+} */
+
+
+/* Estilazamos nossa terceira sessão */
+.section03 {
+    padding: 180px;
+    background: linear-gradient(180deg, white 8.33%, #fcfafae3 100%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.section03 h3 {
+    font-size: 1.5em;
+}
+
+.section03 span {
+    color: chocolate;
+}
+
+.section03 p {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+
+.section03 button {
+    height: 40px;
+    width: 10rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(63, 61, 61);
+    margin-top: 10px;
+}
+.section03 button a {
+    color: white;
+}
+
+#section-03 .div04 img {
+    width: 400px;
+    height: 550px;
+ }
+
+
+ /* Aqui estamos estilizando a nossa quarta sessão */
+
+ /* .section04 {
+    padding: 180px;
+    background: linear-gradient(180deg, white 8.33%, #b4b4b4 100%);;;
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+
+footer {
+    padding: 150px;
+    background: linear-gradient(180deg,  white 8.33%, white 100%);
+
+}
+ footer .text {
+    text-align: center;
+ }
+footer .inputs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+footer button {
+    height: 30px;
+    width: 5rem;
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(8, 8, 8);
+    margin-top: 10px;
+}
+
+footer .div-fim {
+    display: flex; /*Tornando flex meus conteúdo*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-fim p {
+    font-size: 1rem;
+}
+ 
+/* footer .lista-nãoordenada li a {
+    text-align: center;
+} */
+
+footer i {
+  color: black;
+  font-size: 1.5em;
+  margin: 30px;
+}
+
+footer i:hover {
+    color: chocolate;
+    transition: 1s;
 }
