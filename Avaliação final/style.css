@@ -31,7 +31,7 @@ header h1 {
   background-color: white;
   display: flex;
   justify-content: space-around;
-
+  margin: 30px;
 } 
 
 .section01 .div01 i {
@@ -88,8 +88,8 @@ header h1 {
 
 
  #section-01 .div02 img {
-    width: 400px;
-    height: 550px;
+    width: 350px;
+    height: 600px;
  }
  /* Finalizando a estilização da primeira sessão */
 
@@ -127,14 +127,15 @@ header h1 {
 
 /* Estilazamos nossa terceira sessão */
 .section03 {
-    padding: 180px;
+    padding: 150px;
     background: linear-gradient(180deg, white 8.33%, #fcfafae3 100%);
     display: flex;
     justify-content: space-around;
+    
 }
 
 .section03 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .section03 span {
@@ -142,7 +143,7 @@ header h1 {
 }
 
 .section03 p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 20px;
 }
 
@@ -162,9 +163,10 @@ header h1 {
 }
 
 #section-03 .div04 img {
-    width: 400px;
+    width: 300px;
     height: 550px;
  }
+
 
 
  /* Aqui estamos estilizando a nossa quarta sessão */
