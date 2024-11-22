@@ -214,14 +214,12 @@ footer .div-fim {
     font-size: 1rem;
 }
  
-/* footer .lista-nãoordenada li a {
-    text-align: center;
-} */
 
 footer i {
   color: black;
   font-size: 1.5em;
-  margin: 30px;
+  margin: 20px;
+ 
 }
 
 footer i:hover {
