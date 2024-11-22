@@ -29,8 +29,8 @@ header h1 {
  
 /* Aqui é a estilização do nosso logo */
 .div01 img {
-    width: 15rem;
-    height: 15rem;
+    width: 1rem;
+    height: 17rem;
 }
 .section01 {
   padding: min(5vh, 3rem);
