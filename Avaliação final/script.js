@@ -1,33 +1,36 @@
 
 
+// Seleciona o elemento que contém todas as imagens do carrossel
 
-// $(document).ready: Função que garante que o código dentro dela excute 
-// somente após o HTML completo da página estar carregado.
+const track = document.getElementById('carouselTrack');
 
-$(document).ready(function() {
+// Obtém o número de iamgens no carrossel
+const items = document.querySelectorAll('.carousel-item');
+let index = 0; //Índice que rastreia a iamgem atual
 
+// Função que move o carrossel para a próxima imagem 
+function moveCarousel() {
 
-    // Seleciona o contêiner .carousel e aplica a função slick().
-    // que ativa o carrossel com as configurações abaixo.
-    $('.carousel').slick({
-       
-        // SlidesToShow: número de cards exibidos ao mesmo tempo no carrossel
-        slidesToShow: 3, //Exibe 3 cards ao mesmo tempo.
+    // Incrementa o índice para avançar uma imagem
+    index++;
 
+// Verifica se o índice chegou à última imagem clonada
+if (index >= items.length - 1) {
+    // Pequeno atraso para permitir que  a transição termine
 
-        //slidesToScroll: define quantos cards serão deslizados ap mover o carrossel
-        slidesToScroll: 1, //Move 1 card por vez ao deslizar.
+    setTimeout(() => {
+        track.style.transition = 'none' //Remove a animação
+        index = 0; //Volta ao início (primeira imagem)
+        track.style.transform = `translateX(0)`; //Move para a primeira iamgem
+    }, 500); //Tempo suficiente para completar a transição visível
 
+} else {
+    // Move o carrossel para a próxima imagem
+    track.style.transition = 'transform 0.5s ease'; //Adiciona a animação
 
-        // infinite: quando true, o carrossel retorna ao início automaticamente
-        infinie: true, //Mantém o carrossel em rotação contínua.
-        
-        
-        // dots: quando true, ativa os pontos de navegação abaixo do carrossel.
-        dots: true,  //Adiciona pontos de navegação para os usuários
+    track.style.transform = `translateX(-${index * 100}%)`; //Desloca o carrossel
+  }
+}
 
-
-        // arrows: exibe setas de navegação na laterais do carrossel
-        arrows: true,  // Ativa as setas para navegar entre os cards
-    });
-});
+// Define um intervalo para mover o carrossel automaticamento a cada 3 segundos
+setInterval(moveCarousel, 2000); 

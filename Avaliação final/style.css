@@ -12,7 +12,7 @@
 }
 
 header {
-    background-color: white;
+    background-color: black;
     padding: 8px;
     top: 0;
     z-index: 999;
@@ -21,35 +21,45 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: center;
+    color: white;
 }
 
  
+/* Aqui é a estilização do nosso logo */
+.div01 img {
+    width: 15rem;
+    height: 15rem;
+}
 .section01 {
-  padding: 180px;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  margin: 30px;
+  padding: min(5vh, 3rem);
+  background-color: black;
 } 
+
+.section01 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 .section01 .div01 i {
     font-size: 1.2rem;
     margin-top: 50px;
+    color: white;
 }
 
 .section01 h3 {
     font-size: 1.5em;
+    color: white;
 }
 
-.section01 span {
-    color: chocolate;
-}
 
 .section01 p {
     font-size: 1em;
-    margin-top: 20px;
+    margin-top: 15px;
+    color: white;
 }
 
 
@@ -59,10 +69,10 @@ header h1 {
     font-size: 15px;
     font-weight: 500;
     border-radius: 4px;
-    color: white;
-    background-color: rgb(63, 61, 61);
+    background-color: purple;
     margin-top: 10px;
 }
+
 .section01 button a {
     color: white;
 }
@@ -75,76 +85,111 @@ header h1 {
 
 .lista-nãoordenada li a {
     text-decoration: none;
-    color: black;
-    font-size: 1rem;
+    color: white;
+    font-size: 0.9rem;
     margin-left: 20px;
 }
 
 .lista-nãoordenada li a:hover {
-    color: chocolate;
-    text-decoration: overline 2px black;
+    color: purple;
+    text-decoration: overline 2px white;
     transition: 1s; 
 }
 
 
  #section-01 .div02 img {
-    width: 350px;
-    height: 600px;
+    width: 300px;
+    height: 550px;
  }
  /* Finalizando a estilização da primeira sessão */
 
+
+
+
+
+ /* Estilo do container do carrossel */
+ .carousel-container {
+    overflow: hidden; /*Esconde partes das imagens que saem do container*/
+    width: 100%; /*O container ocupa toda a largura da página*/
+    max-width: 800px; /*Largura máxima para limitar em telas maiores*/
+    margin: auto; /*Centraliza o container*/
+ }
+
+ /* Estilo da faixa das imagens */
+
+ .carousel-track {
+    display: flex; /*Coloca as imagens lado a lado em linha*/
+    transition: transform 0.5s ease; /*Animação suave para a transição*/
+ }
+
+ /* Cada item do carrossel */
+ .carousel-item {
+    flex: 0 0 100%; /*Cada item ocupa 100% da largura do container*/
+ }
+
  
- .section02 {
-    padding: 250px;
-    background-color: #995656;
+
+  #section2 {
+    background-color: black;
+    padding: min(3vh, 1.6rem);
+    width: 100%;
+    flex-wrap: wrap;
+ } 
+
+
+
+
+ .carousel-item {
+    flex: 0 0 100%; /*Cada item ocupa 100% da largura do container*/
+ }
+
+ .carousel-item img {
+    width: 100%; /*As imagens ocupam toda a largura do item*/
+    display: block; /*Garante que não haja espaçamento abaixo das imagens*/
+    transition: 0.9s;
  }
 
 
- /* A estilização do nosso carrossel */
 
-
-/* Estilo básico para os cards */
-/* .card {
-    background-color: rgb(143, 2, 2);
-    padding: 20px;
+ .section-02 .div-hp {
     text-align: center;
-    border-radius: 8px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    height: 400px;
-}
+ }
 
-.card p {
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.card h3 {
+.section-02 h2 {
+    font-size: 1.8rem;
     color: white;
-} */
+}
+
+.section-02 p {
+    color: white;
+    font-size: 0.8em;
+}
 
 
+
+ 
 /* Estilazamos nossa terceira sessão */
 .section03 {
     padding: 150px;
-    background: linear-gradient(180deg, white 8.33%, #fcfafae3 100%);
+    background-color: black;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-evenly; 
+    align-items: center;
 }
 
 .section03 h3 {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    color: white;
 }
 
 .section03 span {
-    color: chocolate;
+    color: white;
 }
 
 .section03 p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 20px;
+    color: white;
 }
 
 
@@ -154,55 +199,68 @@ header h1 {
     font-size: 15px;
     font-weight: 500;
     border-radius: 4px;
-    color: white;
-    background-color: rgb(63, 61, 61);
+    background-color: purple;
     margin-top: 10px;
 }
+
 .section03 button a {
     color: white;
 }
 
+
+
+
 #section-03 .div04 img {
-    width: 300px;
+    width: 350px;
     height: 550px;
  }
 
 
 
- /* Aqui estamos estilizando a nossa quarta sessão */
-
- /* .section04 {
-    padding: 180px;
-    background: linear-gradient(180deg, white 8.33%, #b4b4b4 100%);;;
-    display: flex;
-    justify-content: space-around;
-} */
 
 
 
+ /* Estamos começando a estilização do nosso rodapé */
 footer {
     padding: 150px;
-    background: linear-gradient(180deg,  white 8.33%, white 100%);
-
+    background: linear-gradient(180deg,  rgb(3, 3, 3) 8.33%, rgb(0, 0, 0) 100%);
 }
  footer .text {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
  }
+
+ footer h1 {
+    font-size: 1.4em;
+    color: white;
+ }
+
+ footer span {
+    font-size: 0.8em;
+    color: white;
+ }
+
+
 footer .inputs {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 10px;
     flex-wrap: wrap;
-}
+} 
+
 
 footer button {
     height: 30px;
     width: 5rem;
     font-size: 15px;
     border-radius: 4px;
-    color: white;
-    background-color: rgb(8, 8, 8);
+    color: black;
+    background-color: white;
     margin-top: 10px;
 }
 
@@ -214,17 +272,18 @@ footer .div-fim {
 
 .div-fim p {
     font-size: 1rem;
+    color: white;
 }
  
 
 footer i {
-  color: black;
+  color: purple;
   font-size: 1.5em;
-  margin: 20px;
+  margin: 30px;
  
 }
 
 footer i:hover {
-    color: chocolate;
+    color: white;
     transition: 1s;
 }
