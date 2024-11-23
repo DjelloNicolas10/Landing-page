@@ -26,6 +26,21 @@ header h1 {
     color: white;
 }
 
+
+
+/* Estlização do botão do whatsapp */
+.whatsapp {
+    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+  }
+  
+  .whatsapp img {
+     position: fixed; /*mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página*/
+     bottom: 20px; /*Define a distância da imagem em relação à parte inferior da tela*/
+     right: 20px; /*Define a distância da imagem em relação à direita da tela*/
+     width: 3.8rem; /*Define a largura da imagem como 5 unidades de rem (relativas ao tamanho da fonte)*/
+     height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporção*/
+  }
+  
  
 /* Aqui é a estilização do nosso logo */
 .div01 img {
