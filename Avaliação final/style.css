@@ -29,8 +29,8 @@ header h1 {
  
 /* Aqui é a estilização do nosso logo */
 .div01 img {
-    width: 1rem;
-    height: 17rem;
+    width: 18rem;
+    height: 18rem;
 }
 .section01 {
   padding: min(5vh, 3rem);
@@ -63,7 +63,8 @@ header h1 {
 }
 
 
-.section01 button {
+/* estilização do botão da primeira sessão */
+.div01 button {
     height: 40px;
     width: 10rem;
     font-size: 15px;
@@ -72,9 +73,12 @@ header h1 {
     background-color: purple;
     margin-top: 10px;
 }
-
-.section01 button a {
+ .div01 button a {
     color: white;
+    width: 200px; /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-radius: 50px; /*Arredondamento da borda*/
+    border-color: white; /*Cor da borda*/
 }
 
 .lista-nãoordenada {
@@ -98,8 +102,9 @@ header h1 {
 
 
  #section-01 .div02 img {
-    width: 300px;
-    height: 550px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
  }
  /* Finalizando a estilização da primeira sessão */
 
@@ -149,8 +154,6 @@ header h1 {
     transition: 0.9s;
  }
 
-
-
  .section-02 .div-hp {
     text-align: center;
  }
@@ -169,27 +172,21 @@ header h1 {
 
  
 /* Estilazamos nossa terceira sessão */
+
 .section03 {
-    padding: 150px;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 200px; /*Preenchimento a sessão*/
+    display: flex; /*Tornando flex*/
+    justify-content: space-evenly; /*Alinhamento na horizontal*/
+    align-items: center; /*Alinhamento vertical*/
+    gap: 22px;
 }
 
-.section03 h3 {
-    font-size: 1.4em;
+.div3 p {
+    font-size: 20px;
     color: white;
-}
-
-.section03 span {
-    color: white;
-}
-
-.section03 p {
-    font-size: 1em;
-    margin-top: 20px;
-    color: white;
+    margin-bottom: 20px; /*Espaçamento inferior*/
+    font-weight: 300;
 }
 
 
@@ -203,17 +200,84 @@ header h1 {
     margin-top: 10px;
 }
 
-.section03 button a {
+
+.div3 a button {
     color: white;
+    width: 200px; /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-radius: 50px; /*Arredondamento da borda*/
+    border-color: white; /*Cor da borda*/
+}
+
+.div3 a button:hover {
+    background-color: black; /*Alterando a cor de fundo*/
+    color: white; /*Cor da letra ao passar o mouse*/
+    border-color: white; /*Cor da borda ao passa o mouse*/
+    transition: 0.8s; /*tempo de transicão*/
+}
+
+.div4 img {
+  width: 350px; /**/
+  height: 500px; /**/
+  margin-left: 20px; /*Espaçamento a esquerda*/
+  border-radius: 10px;
 }
 
 
 
 
-#section-03 .div04 img {
-    width: 350px;
-    height: 550px;
+/* Aqui estamos começando a estilização da nossa quarta sessão */
+
+.section04 {
+    background-color: rgb(0, 0, 0);
+    padding: 200px; /*Preenchimento a sessão*/
+    display: flex; /*Tornando flex*/
+    justify-content: space-evenly; /*Alinhamento na horizontal*/
+    align-items: center; /*Alinhamento vertical*/  
+    gap: 25px;
+}
+
+ .div6 p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px; /*Espaçamento inferior*/
+    font-weight: 300;
+    
  }
+
+
+ .section04 button  {
+    height: 40px;
+    width: 10rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: purple;
+    margin-top: 10px;
+ }
+
+.div6 a button {
+    color: white;
+    width: 200px; /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-radius: 50px; /*Arredondamento da borda*/
+    border-color: white; /*Cor da borda*/ 
+}
+
+.div6 a button:hover {
+    background-color: black; /*Alterando a cor de fundo*/
+    color: white; /*Cor da letra ao passar o mouse*/
+    border-color: white; /*Cor da borda ao passa o mouse*/
+    transition: 0.8s; /*tempo de transicão*/
+}
+
+
+.div5 img {
+    width: 350px; /**/
+    height: 500px; /**/
+    margin-right: 25px; /*Espaçamento a esquerda*/
+    border-radius: 10px;
+  }
 
 
 
@@ -256,7 +320,7 @@ footer .inputs {
 
 footer button {
     height: 30px;
-    width: 5rem;
+    width: 6rem;
     font-size: 15px;
     border-radius: 4px;
     color: black;
@@ -287,3 +351,100 @@ footer i:hover {
     color: white;
     transition: 1s;
 }
+
+
+
+
+
+/* Media Queries para diferentes dispositivos */
+
+/* Dispositivos com telas grandes (Desktops) */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .div01 img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .section01 h3 {
+        font-size: 1.3em;
+    }
+
+    .section03, .section04 {
+        padding: 80px;
+    }
+}
+
+/* Dispositivos médios (Tablets e dispositivos intermediários) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section01 h3 {
+        font-size: 1.2em;
+    }
+
+    .section03, .section04 {
+        padding: 60px;
+        flex-direction: column;
+    }
+
+    .div3 p, .div6 p {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+
+    .div01 button {
+        width: 100%;
+    }
+
+    .div3 a button, .div6 a button {
+        width: 100%;
+    }
+}
+
+/* Dispositivos pequenos (Smartphones e telas pequenas) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .div01 img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .section01 h3 {
+        font-size: 1.1em;
+    }
+
+    .section03, .section04 {
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .div3 p, .div6 p {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer .text {
+        flex-direction: column;
+    }
+
+    footer i {
+        font-size: 1.2em;
+    }
+}
+
+
