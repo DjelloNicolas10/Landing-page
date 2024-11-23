@@ -34,3 +34,16 @@ if (index >= items.length - 1) {
 
 // Define um intervalo para mover o carrossel automaticamento a cada 3 segundos
 setInterval(moveCarousel, 2000); 
+
+
+
+
+
+const typed = new Typed('#typed-text', {
+    strings: ["Olá seja Bem-vindo(a) no meu site", "Faça o seu orçamento aqui sem medo"], 
+    typeSpeed: 80, //VELOCIDADE QUE SERÁ DIGITADO NOSSO TEXTO.
+    backSpeed: 25, //VELOCODADE DE RETORNO DO TEXTO.
+    loop: true, //FAZ COM QUE O TEXTO FIQUE EM EXECUÇÃO.
+    showCursor: false, //AQUI ESTAMOS REMOVENDO O CURSOR PADRÃO DO HTML.
+    fadeOut: true, //ADICIONA UMA TRANSICÃO (OPCIONAL).
+});
