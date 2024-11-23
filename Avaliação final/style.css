@@ -284,10 +284,11 @@ header h1 {
 
 
 
- /* Estamos começando a estilização do nosso rodapé */
+
 footer {
     padding: 150px;
     background: linear-gradient(180deg,  rgb(3, 3, 3) 8.33%, rgb(0, 0, 0) 100%);
+    display: block;
 }
  footer .text {
     text-align: center;
@@ -313,8 +314,9 @@ footer .inputs {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     flex-wrap: wrap;
+    font-weight: 300;
 } 
 
 
@@ -326,31 +328,47 @@ footer button {
     color: black;
     background-color: white;
     margin-top: 10px;
+    font-weight: 300p;
 }
 
 footer .div-fim {
-    display: flex; /*Tornando flex meus conteúdo*/
+    display: flex; 
     align-items: center;
     justify-content: space-between;
 }
 
 .div-fim p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
+}
+
+footer .div-fim p i {
+    display: block;
+    text-align: center;
 }
  
 
 footer i {
   color: purple;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 30px;
- 
 }
 
 footer i:hover {
     color: white;
     transition: 1s;
-}
+} 
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -359,30 +377,43 @@ footer i:hover {
 /* Media Queries para diferentes dispositivos */
 
 /* Dispositivos com telas grandes (Desktops) */
-@media (max-width: 1200px) {
+@media (max-width: 834px) {
     header h1 {
         font-size: 1.7rem;
     }
 
-    .div01 img {
-        width: 15rem;
-        height: 15rem;
-    }
 
     .section01 h3 {
         font-size: 1.3em;
     }
 
+    .lista-nãoordenada li a {
+        display: block;
+    }
+
     .section03, .section04 {
         padding: 80px;
     }
+
 }
+
+
 
 /* Dispositivos médios (Tablets e dispositivos intermediários) */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
     }
+
+    .div01 img {
+        width: 12rem;
+        height: 12rem;
+    }
+    .section01 {
+        padding: 60px;
+        flex-direction: column;
+    }
+
 
     .section01 h3 {
         font-size: 1.2em;
@@ -397,32 +428,71 @@ footer i:hover {
         font-size: 18px;
     }
 
-    footer {
-        padding: 50px;
-    }
-
-    .div01 button {
-        width: 100%;
-    }
 
     .div3 a button, .div6 a button {
         width: 100%;
     }
+
+
+
+    footer .lista-nãoordenada li a {
+       display: block;
+    }
+
+    footer {
+        padding: 60px;
+    }
+    
+    .div-fim p {
+        font-size: 16px;
+    }
+
+    footer i {
+        font-size: 1.8em;
+        margin: 40px;
+    }
+    .div01 button {
+        width: 100%;
+    }
+
 }
 
 /* Dispositivos pequenos (Smartphones e telas pequenas) */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .div01 img {
-        width: 12rem;
-        height: 12rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .section01 h3 p {
+      display: block;
     }
 
     .section01 h3 {
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    .section01 p {
+        font-size: 0.8em;
+    }
+
+
+    .section01 {
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .section01 .lista-nãoordenada li a {
+       flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    .section-02 h2 {
+        font-size: 1em;
     }
 
     .section03, .section04 {
@@ -431,7 +501,7 @@ footer i:hover {
     }
 
     .div3 p, .div6 p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     footer {
@@ -439,12 +509,23 @@ footer i:hover {
     }
 
     footer .text {
-        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
     }
 
-    footer i {
-        font-size: 1.2em;
+    footer .lista-nãoordenada {
+        display: none;
     }
-}
+
+    footer .div-fim p {
+      font-size: 15px;
+      text-align: center;
+    }
+    footer i {
+        font-size: 1.5rem;
+        margin: 18px;
+        text-align: center;
+    }
+} 
 
 
