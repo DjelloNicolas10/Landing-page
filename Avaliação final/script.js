@@ -47,3 +47,18 @@ const typed = new Typed('#typed-text', {
     showCursor: false, //AQUI ESTAMOS REMOVENDO O CURSOR PADRÃO DO HTML.
     fadeOut: true, //ADICIONA UMA TRANSICÃO (OPCIONAL).
 });
+
+
+
+ScrollReveal().reveal(".div3", {
+    distance: "100px",
+    origin: "right",
+    duration: 1500,
+});
+
+
+ScrollReveal().reveal("..div6", {
+    distance: "100px",
+    origin: "right",
+    duration: 1500,
+});
